@@ -1,12 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__contorls">
+            <img
+              class="header__logo"
+              src="./img/logo.png"
+              alt="logo"
+              width="44"
+              height="38"
+            />
+            <img src="./img/loupe.png" alt="loupe" width="26" height="27" />
+          </div>
+          <div class="header__controls">
+            <button class="header__button">
+              <img src="./img/menu1.svg" alt="menu" width="32" height="23" />
+            </button>
+            <a class="header__person-link" href="#"
+              ><img src="./img/person.png" alt="person" width="29" height="29"
+            /></a>
+            <a class="header__cart-link" href="#"
+              ><img src="./img/cart.png" alt="cart" width="32" height="29"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <nav class="header__nav">
+        menu
+        <ul>
+          <li>
+            <h2>man</h2>
+            <ul>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <h2>women</h2>
+            <ul>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <h2>kids</h2>
+            <ul>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="brand">
+        <img src="./img/man.jpg" alt="man" width="800" height="765" />
+        <div class="brand__title-wrapper">
+          <h1 class="brand__title">
+            the brand
+            <span class="brand__subtitle"
+              >of luxerious <span class="brand__subtitle-pink">fashion</span>
+            </span>
+          </h1>
+        </div>
+      </section>
+
+      <section class="offers container">
+        <h2 class="visually-hidden">offers</h2>
+        <ul class="offers__list">
+          <li class="offers__item offers__item--women">
+            <span>
+              <h3>30% off</h3>
+              <span class="offers__item-text"><p>for women</p></span>
+            </span>
+          </li>
+          <li class="offers__item offers__item--men">
+            <span>
+              <h3>hot deal</h3>
+              <span class="offers__item-text"><p>for men</p></span>
+            </span>
+          </li>
+          <li class="offers__item offers__item--kids">
+            <span>
+              <h3>new arrivals</h3>
+              <span class="offers__item-text"> <p>for kids</p></span>
+            </span>
+          </li>
+          <li class="offers__item offers__item--accesories">
+            <span>
+              <h3>luxirous & trendy</h3>
+              <span class="offers__item-text"><p>accesories</p></span>
+            </span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="product container">
+        <h2 class="product__title">fetured items</h2>
+        <p class="product__subtitle">Shop for items based on what we featured in this week</p>
+        <ul class="product__list">
+          <li class="product__item">
+            <img src="/shop/img/product1.jpg" alt="product1" />
+            <div class="product__item product__item--info">
+              <h2 class="product__item-wrapper">ellery x m'o capsule</h2>
+              <p class="product__item-text">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <p class="product__item-price">$52.00</p>
+            </div>
+          </li>
+          <li class="product__item">
+            <img src="/shop/img/product2.jpg" alt="product2" />
+            <div class="product__item product__item--info">
+              <h2 class="product__item-wrapper">ellery x m'o capsule</h2>
+              <p class="product__item-text">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <p class="product__item-price">$52.00</p>
+            </div>
+          </li>
+          <li class="product__item">
+            <img src="/shop/img/product3.jpg" alt="product3" />
+            <div class="product__item product__item--info">
+              <h2 class="product__item-wrapper">ellery x m'o capsule</h2>
+              <p class="product__item-text">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <p class="product__item-price">$52.00</p>
+            </div>
+          </li>
+          <li class="product__item">
+            <img src="/shop/img/product4.jpg" alt="product4" />
+            <div class="product__item product__item--info">
+              <h2 class="product__item-wrapper">ellery x m'o capsule</h2>
+              <p class="product__item-text">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <p class="product__item-price">$52.00</p>
+            </div>
+          </li>
+          <li class="product__item">
+            <img src="/shop/img/product5.jpg" alt="product5" />
+            <div class="product__item product__item--info">
+              <h2 class="product__item-wrapper">ellery x m'o capsule</h2>
+              <p class="product__item-text">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <p class="product__item-price">$52.00</p>
+            </div>
+          </li>
+          <li class="product__item">
+            <img src="/shop/img/product6.jpg" alt="product6" />
+            <div class="product__item product__item--info">
+              <h2 class="product__item-wrapper">ellery x m'o capsule</h2>
+              <p class="product__item-text">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <p class="product__item-price">$52.00</p>
+            </div>
+          </li>
+        </ul>
+        <div class="product__button-inner">
+        <button class="product__button"> <p class="product__button-text">Browse All Product</p> 
+        </button></div>
+      </section>
+
+      <section class="information container">
+        <ul>
+          <li>
+            <img src="/shop/img/delivery.svg" alt="delivery">
+            <h2>Free Delivery</h2>
+            <p>
+              Worldwide delivery on all. Authorit tively morph next-generation
+              innov tion with extensive models.
+            </p>
+          </li>
+          <li>
+            <img src="/shop/img/Sales.svg" alt="Sales">
+            <h2>Sales & discounts</h2>
+            <p>
+              Worldwide delivery on all. Authorit tively morph next-generation
+              innov tion with extensive models.
+            </p>
+          </li>
+          <li>
+            <img src="/shop/img/Quality.svg" alt="Quality">
+            <h2>Quality assurance</h2>
+            <p>
+              Worldwide delivery on all. Authorit tively morph next-generation
+              innov tion with extensive models.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <ul>
+          <li>
+            img
+            <p>
+              “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+              pulvinar purus condimentum“
+            </p>
+          </li>
+          <li>
+            <h2>SUBSCRIBE</h2>
+            <p>FOR OUR NEWLETTER AND PROMOTION</p>
+            <form action="#" method="get">
+              <input type="text" placeholder="Enter Your Email" />
+              <button>
+                <p>Subscribe</p>
+              </button>
+            </form>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <p>© 2021 Brand All Rights Reserved.</p>
+        <a href="#">facebook-img</a>
+        <a href="#">inst-img</a>
+        <a href="#">pinterest-img</a>
+        <a href="#">twitter-img</a>
+      </section>
+    </footer>
+  </body>
 </html>
