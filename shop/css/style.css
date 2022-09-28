@@ -199,4 +199,25 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
+}
+
+.product__button {
+  min-height: 47px;
+  width: 211px;
+  border: 1px solid var(--dark-pink);
+  justify-content: center;
+  background-color: var(--white);
+}
+
+.product__button-inner {
+  margin: 48px 0 95px;
+  display: flex;
+  justify-content: center;
+}
+
+.product__button-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: var(--dark-pink);
 }/*# sourceMappingURL=style.css.map */
