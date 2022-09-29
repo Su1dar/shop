@@ -4,9 +4,12 @@
   --dark-pink: #F16D7F;
   --brown: #211616B2;
   --white: #FFFFFF;
+  --maxlight-grey: #E1E1E1;
   --light-grey: #F8F8F8;
   --dark-grey: #5D5D5D;
   --grey: #9F9F9F;
+  --dark-brown: #222224;
+  --black: #000000;
 }
 
 body {
@@ -22,7 +25,9 @@ body {
 }
 
 .header {
+  width: 100%;
   background: var(--dark-blue);
+  min-height: 75px;
 }
 
 .header__wrapper {
@@ -33,7 +38,53 @@ body {
 }
 
 .header__nav {
-  display: none;
+  background-color: var(--white);
+  height: 764px;
+  width: 195px;
+  float: right;
+  box-sizing: border-box;
+}
+
+.header__menu {
+  box-sizing: border-box;
+  padding: 37px 73px 157px 33px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__title {
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  text-align: left;
+  margin: 0 0 24px;
+}
+
+.header__item {
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0 0 20px;
+}
+
+.header__subtitle {
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  color: var(--dark-pink);
+}
+
+.header__link {
+  margin: 0 0 11px 21px;
+}
+
+.header__link-link {
+  text-decoration: none;
+  color: var(--black);
 }
 
 .header__button {
@@ -48,6 +99,10 @@ body {
 
 .header__logo {
   margin: 0 34px 0 0;
+}
+
+.loup {
+  fill: var(--light-grey);
 }
 
 .brand {
@@ -220,4 +275,186 @@ body {
   font-weight: 400;
   line-height: 19px;
   color: var(--dark-pink);
+}
+
+.information {
+  background-color: var(--dark-brown);
+  min-height: 341px;
+  width: 100%;
+}
+
+.information__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 230px 0;
+}
+
+.information__item {
+  margin: 103px 0 0;
+  min-height: 134px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.information__img {
+  height: 32px;
+  width: 45px;
+  margin: 0 0 28px;
+  align-self: center;
+}
+
+.information__wrapper {
+  color: var(--white);
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  align-self: center;
+}
+
+.information__text {
+  min-height: 34px;
+  width: 360px;
+  color: var(--grey);
+  font-size: 16px;
+  line-height: 15px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.subscribe {
+  background-image: url(/shop/img/backgrond-img.jpg);
+  min-height: 448px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.subscribe__profile {
+  min-height: 225px;
+  width: 359px;
+  margin: 97px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe__profile-img {
+  height: 96px;
+  width: 96px;
+  margin: 0 0 30px;
+  align-self: center;
+}
+
+.subscribe__profile-info {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  min-height: 99px;
+  width: 359px;
+  text-align: center;
+}
+
+.subscribe__profile-info--italic {
+  font-style: italic;
+}
+
+.subscribe__info {
+  min-height: 61px;
+  width: 557px;
+  margin: 150px 0 0;
+}
+
+.subscribe__title {
+  margin: 0 0 32px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+}
+
+.subscribe__title--text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+.subscribe__form {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.subscribe__form-input {
+  height: 49px;
+  width: 256px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 50px 0 0 50px;
+  background-color: var(--maxlight-grey);
+  padding: 7px 64px 6px 22px;
+}
+
+.subscribe__form-button {
+  background-color: var(--dark-pink);
+  min-height: 49px;
+  border-radius: 0 50px 50px 0;
+  width: 100px;
+  border: none;
+}
+
+.socials {
+  background-color: var(--dark-brown);
+  min-height: 79px;
+  width: 100%;
+  display: flex;
+}
+
+.socials__text {
+  margin: 30px 0;
+  color: var(--light-grey);
+  height: 19px;
+  width: 332px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.socials__contact {
+  height: 32px;
+  width: 147px;
+  margin: 24px 230px 0;
+  display: flex;
+  justify-content: space-around;
+  justify-content: flex-start;
+}
+
+.socials__button {
+  height: 32px;
+  width: 31px;
+  background-color: var(--white);
+}
+
+.socials__svg {
+  fill: var(--black);
+}
+
+.socials__svg--facebook {
+  margin: 8px 9px 11px 11px;
+}
+
+.socials__svg--instagram {
+  margin: 8.6px 8px 8px;
+}
+
+.socials__svg--pinterest {
+  margin: 8px 9px 8px 10px;
+}
+
+.socials__svg--twitter {
+  margin: 9px 7px;
 }/*# sourceMappingURL=style.css.map */
