@@ -10,7 +10,7 @@
     --grey: #9F9F9F;
     --dark-brown: #222224;
     --black: #000000;
-
+    --grey-grey: #A4A4A4;
 
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    width: 1138px;
+    width: 1140px;
     margin: 0 auto;
 }
 
@@ -40,13 +40,15 @@ body {
 }
 
 .header__nav {
-    //display: none;//
+    display: none;
     background-color: var(--white);
     height: 764px;
     width: 195px;
     float: right;
     box-sizing: border-box;
+    position: absolute;
 }
+
 
 .header__menu {
     box-sizing: border-box;
@@ -54,6 +56,14 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.header__button:hover +.header__nav,
+.header__button:active +.header__nav {
+    display: block;
+}
+
+.header__nav:
+
 
 .header__title {
     text-transform: uppercase;
@@ -417,6 +427,20 @@ padding: 7px 64px 6px 22px;
     border: none;
 }
 
+.subscribe__form-button:hover,
+.subscribe__form-button:active {
+   opacity: 0.5;
+}
+
+.subscribe__form-text {
+font-size: 14px;
+font-weight: 400;
+line-height: 17px;
+text-align: center;
+color: var(--white);
+}
+
+
 .socials {
     background-color: var(--dark-brown);
     min-height: 79px;
@@ -450,22 +474,181 @@ padding: 7px 64px 6px 22px;
     background-color: var(--white);
 }
 
+.socials__button:hover,
+.socials__button:active {
+    height: 32px;
+    width: 31px;
+    background-color: var(--dark-pink);
+    
+  }
+
 .socials__svg {
     fill: var(--black)
 }
 
+.socials__svg:hover, 
+.socials__svg:active {
+    fill: var(--white)
+}
+
 .socials__svg--facebook {
-    margin: 8px 9px 11px 11px;
+    padding: 8px 9px 11px 11px;
 }
 
 .socials__svg--instagram {
-    margin: 8.6px 8px 8px;
+    padding: 8.6px 8px 8px;
 }
 
 .socials__svg--pinterest {
-    margin: 8px 9px 8px 10px;
+    padding: 8px 9px 8px 10px;
 }
 
 .socials__svg--twitter {
-    margin: 9px 7px;
+    padding: 9px 7px;
+}
+
+
+
+
+.title {
+    width: 100%;
+    background-color: var(--pink);
+    min-height: 148px;
+    display: flex;
+}
+
+.title__text {
+    color: var(--dark-pink);
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+text-align: left;
+box-sizing: border-box;
+padding: 60px 190px;
+text-transform: uppercase;
+}
+
+.registration {
+    display: flex;
+    flex-direction: column;
+    margin: 0 128px 0 0;
+}
+
+.registration__wrapper {
+    display: flex;
+    margin: 64px 230px 96px ;
+}
+
+.registration__title {
+font-size: 16px;
+font-weight: 300;
+line-height: 19px;
+
+
+}
+
+.registration__name {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration__form {
+    height: 44px;
+width: 359px;
+border: 1px solid var(--grey-grey);
+margin: 21px 0 0 ;
+box-sizing: border-box;
+padding: 12px 277px 15px 16px;
+}
+
+.registration__form::placeholder {
+    color:#B1B1B1;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: left;
+    
+  }
+
+  .registration__gender {
+    margin: 31px 0;
+    min-height: 17px;
+    width: 200px;
+  }
+  
+
+.registration__login {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration__text {
+
+font-size: 13px;
+font-weight: 300;
+line-height: 16px;
+color: var(--grey);
+margin: 15px 0 0;
+}
+
+.registration__button {
+    height: 50px;
+width: 167px;
+margin: 39px 0 96px;
+background-color: var(--dark-pink);
+border: none;
+}
+
+.registration__button-text {
+
+font-size: 14px;
+font-weight: 400;
+line-height: 17px;
+color: var(--white);
+text-transform: uppercase;
+}
+
+.registration__information {
+min-height: 334px;
+width: 652px;
+font-size: 24px;
+font-weight: 300;
+line-height: 29px;
+text-align: left;
+
+}
+
+.registration-information__title {
+    text-transform: uppercase;
+font-size: 24px;
+font-weight: 300;
+line-height: 29px;
+}
+
+.registration-information__subtitle {
+font-size: 24px;
+font-weight: 300;
+line-height: 29px;
+margin: 22px 0 21px;
+}
+
+.registration__item {
+    text-decoration: none;
+font-size: 24px;
+font-weight: 300;
+line-height: 29px;
+margin:0 0 16px 43px ;
+position: relative;
+}
+
+.registration__item::before {
+    content: '';
+    height: 16px;
+    width: 20px;
+    left: -40px;
+    top: 7px;
+    position: absolute;
+    background-image: url(/shop/img/Vector.png);
+
+
 }

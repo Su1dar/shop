@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet"/>
     <title>Document</title>
   </head>
   <body>
@@ -38,6 +35,48 @@
             <button class="header__button" type="button">
               <img src="./img/menu1.svg" alt="menu" width="32" height="23" />
             </button>
+
+            <nav class="header__nav">
+              <menu class="header__menu"> 
+      
+                <h2 class="header__title">Menu</h2>
+      
+                <li class="header__item header__item--man">
+                  <h3 class="header__subtitle">man</h3>
+                  <ul>
+                    <li class="header__link"><a class="header__link-link" href="#">Accessories</a></li>
+                    <li class="header__link"><a class="header__link-link" href="#">Bags</a></li>
+                    <li class="header__link"><a class="header__link-link" href="#">Denim</a></li>
+                    <li class="header__link"><a class="header__link-link" href="#">T-Shirts</a></li>
+                  </ul>
+                </li>
+      
+                <li class="header__item header__item--women">
+                  <h3 class="header__subtitle">women</h3>
+                  <ul>
+                    <li class="header__link"><a class="header__link-link" href="#">Accessories</a></li>
+                    <li class="header__link"><a class="header__link-link" href="#">Jackets & Coats</a></li>
+                    <li class="header__link"><a class="header__link-link" href="#">Polos</a></li>
+                    <li class="header__link"><a class="header__link-link" href="#">T-Shirts</a></li>
+                    <li class="header__link"><a class="header__link-link" href="#">Shirts</a></li>
+                  </ul>
+                </li>
+      
+                <li class="header__item header__item--kids">
+                  <h3 class="header__subtitle">kids</h3>
+                  <ul>
+                    <li class="header__link"><a class="header__link-link" href="#">Accessories</a></li>
+                    <li class="header__link"><a class="header__link-link" href="#">Jackets & Coats</a></li>
+                    <li class="header__link"><a class="header__link-link" href="#">Polos</a></li>
+                    <li class="header__link"><a class="header__link-link" href="#">T-Shirts</a></li>
+                    <li class="header__link"><a class="header__link-link" href="#">Shirts</a></li>
+                    <li class="header__link"><a class="header__link-link" href="#">Bags</a></li>
+                  </ul>
+                </li>
+              </menu>
+            </nav>
+
+            
             <a class="header__person-link" href="#"
               ><img src="./img/person.png" alt="person" width="29" height="29"
             /></a>
@@ -47,45 +86,7 @@
           </div>
         </div>
       </div>
-      <nav class="header__nav">
-        <menu class="header__menu"> 
 
-          <h2 class="header__title">Menu</h2>
-
-          <li class="header__item header__item--man">
-            <h3 class="header__subtitle">man</h3>
-            <ul>
-              <li class="header__link"><a class="header__link-link" href="#">Accessories</a></li>
-              <li class="header__link"><a class="header__link-link" href="#">Bags</a></li>
-              <li class="header__link"><a class="header__link-link" href="#">Denim</a></li>
-              <li class="header__link"><a class="header__link-link" href="#">T-Shirts</a></li>
-            </ul>
-          </li>
-
-          <li class="header__item header__item--women">
-            <h3 class="header__subtitle">women</h3>
-            <ul>
-              <li class="header__link"><a class="header__link-link" href="#">Accessories</a></li>
-              <li class="header__link"><a class="header__link-link" href="#">Jackets & Coats</a></li>
-              <li class="header__link"><a class="header__link-link" href="#">Polos</a></li>
-              <li class="header__link"><a class="header__link-link" href="#">T-Shirts</a></li>
-              <li class="header__link"><a class="header__link-link" href="#">Shirts</a></li>
-            </ul>
-          </li>
-
-          <li class="header__item header__item--kids">
-            <h3 class="header__subtitle">kids</h3>
-            <ul>
-              <li class="header__link"><a class="header__link-link" href="#">Accessories</a></li>
-              <li class="header__link"><a class="header__link-link" href="#">Jackets & Coats</a></li>
-              <li class="header__link"><a class="header__link-link" href="#">Polos</a></li>
-              <li class="header__link"><a class="header__link-link" href="#">T-Shirts</a></li>
-              <li class="header__link"><a class="header__link-link" href="#">Shirts</a></li>
-              <li class="header__link"><a class="header__link-link" href="#">Bags</a></li>
-            </ul>
-          </li>
-        </menu>
-      </nav>
     </header>
 
     <main>
@@ -290,7 +291,7 @@
               placeholder="Enter Your Email"
             />
             <button class="subscribe__form-button" type="submit">
-              <p>Subscribe</p>
+              <p class="subscribe__form-text">Subscribe</p>
             </button>
           </form>
         </section>
