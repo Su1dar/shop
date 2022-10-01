@@ -4,3 +4,10 @@
     font-weight: $weight;
     font-style: $style;
 }
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

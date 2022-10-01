@@ -75,6 +75,7 @@
         background-color: transparent;
         border: none;
         margin: 0 33px 0 0;
+        
     }
     
     &__person-link {
@@ -92,7 +93,3 @@
 
 }
 
-.header__button:hover +.header__nav,
-.header__button:active +.header__nav {
-    display: block;
-}
