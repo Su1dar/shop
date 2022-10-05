@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/shop/js/menu.js">
     <title>Document</title>
   </head>
   <body>
@@ -31,7 +32,8 @@
               
           </div>
           <div class="header__controls">
-            <button class="header__button" type="button">
+            <div class="header__dropdown">
+            <button class="header__button" id="button" type="button">
               <img src="/shop/img/menu.png" alt="menu" width="32" height="23" />
             </button>
 
@@ -74,7 +76,7 @@
                 </li>
               </menu>
             </nav>
-
+          </div>
             
             <a class="header__person-link" href="#"
               ><img src="/shop/img/person.png" alt="person" width="29" height="29"
@@ -85,12 +87,12 @@
           </div>
         </div>
       </div>
-
+      <div class="wrp" id="wrp"></div>
     </header>
 
     <main>
       <section class="brand">
-        <img src="/shop/img/man.jpg" alt="man" width="800" height="765" />
+        <img class="brand__img " src="/shop/img/man.jpg" alt="man" width="800" height="765" />
         <div class="brand__title-wrapper">
           <h1 class="brand__title">
             the brand
@@ -138,6 +140,8 @@
         </p>
         <ul class="product__list">
           <li class="product__item">
+             
+            <button  type="button" class="product__overlay-button type=button">
             <img src="/shop/img/product1.jpg" alt="product1" />
             <div class="product__item product__item--info">
               <h2 class="product__item-wrapper">ellery x m'o capsule</h2>
@@ -148,7 +152,15 @@
               </p>
               <p class="product__item-price">$52.00</p>
             </div>
-          </li>
+            </button>
+            <div class="overlay"> 
+              <button type="button" class="overlay__button"> 
+               <h2 class="overlay__text">Add to Cart</h2>
+              </button>
+          </div> 
+        </li>
+
+        
           <li class="product__item">
             <img src="/shop/img/product2.jpg" alt="product2" />
             <div class="product__item product__item--info">
@@ -212,13 +224,13 @@
         </ul>
         <div class="product__button-inner">
           <button class="product__button">
-            <p class="product__button-text">Browse All Product</p>
+            <p class="product__button--text">Browse All Product</p>
           </button>
         </div>
       </section>
 
-      <section class="information container">
-        <ul class="information__list">
+      <section class="information">
+        <ul class="information__list container">
           <li class="information__item">
             <img
               class="information__img"
@@ -296,7 +308,7 @@
         </section>
       </section>
 
-      <section class="container socials ">
+      <section class="socials ">
 
         <p class="socials__text">© 2021 Brand All Rights Reserved.</p>
         <div class="socials__contact">

@@ -3,6 +3,16 @@
     background: $pink;
     margin: 0 0 63px;
 
+    &__img {
+        width: 50%;
+        height: auto;
+
+        @include tablet {
+            width: 385px;
+            height: 370px;
+        }
+    }
+
     &__title {
         text-transform: uppercase;
         font-size: 48px;

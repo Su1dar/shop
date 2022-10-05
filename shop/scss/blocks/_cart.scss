@@ -1,0 +1,209 @@
+.cart {
+    display: flex;
+
+    &__product {
+        margin: 96px 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        display: flex;
+        height: 306px;
+        width: 652px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        margin: 0 0 40px;
+    }
+
+    &__item-img {
+        height: 306px;
+        width: 262px;
+    }
+
+    &__item-info {
+        height: 222px;
+        width: 262px;
+        flex-direction: column;
+        align-self: center;
+        margin: 0 31px;
+    }
+
+    &__name {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        text-align: left;
+        text-transform: uppercase;
+        margin: 0 0 42px;
+    }
+
+    &__info {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+        color: $brown;
+        text-align: left;
+
+        &--price {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '300$';
+                color: $dark-pink;
+                right: 150px;
+            }
+        }
+
+        &--quantity {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '2';
+                border: 1px solid $maxlight-grey;
+                height: 24px;
+                width: 44px;
+                text-align: center;
+                left: 115px;
+            }
+        }
+
+    }
+
+    &__nuv {
+        margin: 72px 0 128px;
+        min-height: 50px;
+        width: 652px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__button {
+        border: 1px solid $grey;
+        height: 50px;
+        width: 235px;
+        background-color: $white;
+    }
+
+    &__button-text {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        text-align: center;
+    }
+
+    &__shipping {
+        margin: 96px 0 0 128px;
+    }
+
+    &__shipping-title {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+    }
+
+    &__adress-input {
+        margin: 21px 0;
+        border: 1px solid $grey;
+        height: 44px;
+        width: 358px;
+    }
+
+    &__adress-button {
+        height: 35px;
+        width: 101px;
+        background-color: $white;
+        margin: 23px 0 57px;
+        border: 1px solid $grey;
+    }
+
+    &__adress-text {
+        color: $dark-brown;
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 13px;
+        text-transform: uppercase;
+        text-align: center;
+
+    }
+
+    &__checkout {
+        height: 214px;
+        width: 360px;
+        background-color: $pink;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__price {
+        margin: 39px 34px 12px;
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13px;
+        height: 13px;
+        width: 108px;
+        position: relative;
+
+        &::after {
+            content: '900$';
+            position: absolute;
+            left: 70px;
+        }
+    }
+
+    &__endprice {
+        margin: 12px 37px 39px;
+        height: 19px;
+        width: 170px;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        position: relative;
+
+        &::after {
+            content: '900$';
+            position: absolute;
+            left: 128px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19px;
+            color: $dark-pink;
+        }
+    }
+
+    &__checkout-button {
+        height: 50px;
+        width: 273px;
+        background-color: $dark-pink;
+        border: none;
+        align-self: center;
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 1px;
+            width: 275px;
+            background-color: #E5E5E5;
+            position: absolute;
+            top: -17px;
+            right: 0;
+        }
+    }
+
+    &__checkout-text {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        color: $white;
+        text-align: center;
+
+    }
+
+}
