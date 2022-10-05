@@ -1,0 +1,48 @@
+.offers {
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    &__item {
+        min-height: 260px;
+        width: 360px;
+        background-color:$brown;
+        color: $white;
+        margin: 0 0 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--women {
+        background-image: url(/shop/img/women.jpg);
+        }
+
+        &--men {
+            background-image: url(/shop/img/man2.jpg);
+        }
+        
+        &--kids {
+            background-image: url(/shop/img/kids.jpg);
+        }
+        
+        &--accesories {
+            background-image: url(/shop/img/accesories.jpg);
+            min-height: 180px;
+            width: 100%;
+            margin: 0 0 96px;
+        }
+    
+
+    }
+    
+    &__item-text {
+        display: block;
+        color: $dark-pink;
+        text-transform: uppercase;
+    }
+
+}
+

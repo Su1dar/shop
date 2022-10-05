@@ -1,0 +1,111 @@
+.header {
+    width: 100%;
+    background: $dark-blue;
+    min-height: 75px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 75px;
+
+    }
+
+    &__dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        margin: 0 33px 0 0;
+        position: relative;
+    }
+
+    &__nav {
+        //position: absolut;
+        display: none;
+        background-color: $white;
+        height: 764px;
+        width: 232px;
+        box-sizing: border-box;
+    }
+
+
+    &:hover,
+    &:active {
+        display: block;
+    }
+
+    &__menu {
+        box-sizing: border-box;
+        padding: 37px 73px 157px 33px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        text-align: left;
+        margin: 0 0 24px;
+    }
+
+    &__item {
+        list-style: none;
+        box-sizing: border-box;
+        padding: 0 0 20px;
+    }
+
+    &__subtitle {
+        text-transform: uppercase;
+        margin: 0 0 12px;
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+        color: $dark-pink;
+
+    }
+
+    &__link {
+        margin: 0 0 11px 21px;
+    }
+
+    &__link-link {
+        text-decoration: none;
+        color: $black;
+
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        margin: 0 33px 0 0;
+
+    }
+
+    &__person-link {
+        margin: 0 33px 0 0;
+    }
+
+    &__logo {
+        margin: 0 34px 0 0;
+    }
+
+    &__loup {
+        fill: $light-grey;
+    }
+}
+
+.header__button:hover+.header__nav,
+.header__button:active+.header__nav {
+    display: block;
+}

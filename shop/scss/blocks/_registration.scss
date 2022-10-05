@@ -1,0 +1,133 @@
+
+.registration {
+    display: flex;
+    flex-direction: column;
+    margin: 0 128px 0 0;
+
+   &__wrapper {
+        display: flex;
+        margin: 64px 230px 96px ;
+    }
+    
+    &__title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    
+    
+    }
+    
+    &__name {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__form {
+        height: 44px;
+    width: 359px;
+    border: 1px solid $grey-grey;
+    margin: 21px 0 0 ;
+    box-sizing: border-box;
+    padding: 12px 277px 15px 16px; 
+
+    &::placeholder {
+        color:#B1B1B1;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        text-align: left;
+      }
+    }
+    
+
+    
+     &__gender {
+        margin: 31px 0;
+        min-height: 17px;
+        width: 200px;
+      }
+      
+    
+      &__login {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__text {
+    
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    color: $grey;
+    margin: 15px 0 0;
+    }
+    
+    &__button {
+        height: 50px;
+    width: 167px;
+    margin: 39px 0 96px;
+    background-color: $dark-pink;
+    border: none;
+
+    &:hover,
+    &:active {
+        opacity: 0.7;
+    }
+    }
+    
+    &__button-text {
+    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: $white;
+    text-transform: uppercase;
+    }
+    
+    &__information {
+    min-height: 334px;
+    width: 652px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-align: left;
+    
+    }
+    
+    &__item {
+        text-decoration: none;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    margin:0 0 16px 43px ;
+    position: relative;
+
+    &::before {
+        content: '';
+        height: 16px;
+        width: 20px;
+        left: -40px;
+        top: 7px;
+        position: absolute;
+        background-image: url(/shop/img/Vector.png);}
+    }
+    
+    
+} 
+
+.registration-information {
+&__title {
+        text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    }
+    
+    &__subtitle {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    margin: 22px 0 21px;
+    }
+
+    }
