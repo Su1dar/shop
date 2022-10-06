@@ -1,5 +1,3 @@
-
-
 .subscribe {
     background-image: url(/shop/img/backgrond-img.jpg);
     min-height: 448px;
@@ -7,100 +5,144 @@
     display: flex;
     justify-content: space-around;
 
+    @include tablet {
+        flex-direction: column;
+        min-height: 768px;
+
+    }
+
+    @include mobile {
+            flex-direction: column;
+            min-height: 550px;
+    }
+
     &__profile {
         min-height: 225px;
-    width: 359px;
-    margin: 97px 0 0;
-    display: flex;
-    flex-direction: column;
+        width: 359px;
+        margin: 97px 0 0;
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            align-self: center;
+        }
+
     }
-    
+
     &__profile-img {
         height: 96px;
         width: 96px;
         margin: 0 0 30px;
         align-self: center;
     }
-    
+
     &__profile-info {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    min-height: 99px;
-    width: 359px;
-    text-align: center;
-        
-    &--italic {
-        font-style: italic;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        min-height: 99px;
+        width: 359px;
+        text-align: center;
+
+        &--italic {
+            font-style: italic;
         }
-        
     }
+
 
     &__info {
         min-height: 61px;
-    width: 557px;
-    margin: 150px 0 0;
-    
-    }
-    
-    &__title {
-    margin: 0 0 32px;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    display: block;
+        width: 557px;
+        margin: 150px 0 0;
 
-    &__title--text {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 30px;
+        @include tablet {
+            align-self: center;
+        }
+
+    }
+
+    &__title {
+
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 40px;
         text-align: center;
+        text-transform: uppercase;
+        display: block;
+
+        @include tablet {
+            @include font(24px, 36px, 400, normal);
+            align-self: center;
+        }
+
+    }
+
+    &__title-text {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+        margin: 0 0 32px;
+
+        @include mobile {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
         }
     }
-    
 
-    
     &__form {
         display: flex;
         justify-content: center;
         box-sizing: border-box;
+
+        @include tablet {
+            padding-bottom: 140px;
+        }
+        @include mobile {
+            padding-bottom: 109px;
+        }
+
     }
-    
+
     &__form-input {
-    height: 49px;
-    width: 256px;
-    border: none;
-    box-sizing: border-box;
-    border-radius: 50px 0 0 50px;
-    background-color: $maxlight-grey;
-    padding: 7px 64px 6px 22px;
+        height: 49px;
+        width: 256px;
+        border: none;
+        box-sizing: border-box;
+        border-radius: 50px 0 0 50px;
+        background-color: $maxlight-grey;
+        padding: 7px 64px 6px 22px;
+
+        @include mobile {
+            width: 245px;
+            height: 47px;
+        }
     }
-    
+
     &__form-button {
         background-color: $dark-pink;
         min-height: 49px;
-        border-radius: 0 50px 50px 0 ;
+        border-radius: 0 50px 50px 0;
         width: 100px;
         border: none;
 
-       &:hover,
-       &:active {
-           opacity: 0.5;
+        &:hover,
+        &:active {
+            opacity: 0.5;
         }
     }
-    
 
-    
+
+
     &__form-text {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    text-align: center;
-    color: $white;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+        color: $white;
     }
-    
+
 }
 
 
@@ -112,67 +154,69 @@
     display: flex;
     justify-content: space-around;
 
-&__text {
-    margin: 30px  0 ;
-    color: $light-grey;
-    height: 19px;
-    width: 332px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
+    &__text {
+        margin: 30px 0;
+        color: $light-grey;
+        height: 19px;
+        width: 332px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+
+    }
+
+    &__contact {
+        height: 32px;
+        width: 147px;
+        margin: 24px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__button {
+
+        height: 32px;
+        width: 31px;
+        background-color: $white;
+    }
+
+    &__button:hover,
+    &__button:active {
+        height: 32px;
+        width: 31px;
+        background-color: $dark-pink;
+
+    }
+
+
+
+    &__svg {
+        fill: $black;
+    }
+
+    &__svg:hover,
+    &__svg:hover,
+    &__svg:hover,
+    &__svg:hover,
+    &__svg:hover,
+    &__svg:active {
+        fill: $white;
+    }
+
+    &__svg--facebook {
+        padding: 8px 9px 11px 11px;
+    }
+
+    &__svg--instagram {
+        padding: 8.6px 8px 8px;
+    }
+
+    &__svg--pinterest {
+        padding: 8px 9px 8px 10px;
+    }
+
+    &__svg--twitter {
+        padding: 9px 7px;
+    }
 
 }
-
-&__contact {
-    height: 32px;
-    width: 147px;
-   margin: 24px  0 ;  
-   display: flex;
-   justify-content: space-around;
-}
-
-&__button {
-   
-    height: 32px;
-    width: 31px;
-    background-color: $white;
-}
-
-&__button:hover,
-&__button:active {
-    height: 32px;
-    width: 31px;
-    background-color: $dark-pink;
-    
-  }
-
-  
-
-&__svg {
-    fill: $black;
-}
-
-&__svg:hover, 
-&__svg:active {
-    fill: $white;
-}
-
-&__svg--facebook {
-    padding: 8px 9px 11px 11px;
-}
-
-&__svg--instagram {
-    padding: 8.6px 8px 8px;
-}
-
-&__svg--pinterest {
-    padding: 8px 9px 8px 10px;
-}
-
-&__svg--twitter {
-    padding: 9px 7px;
-}
-
-}
-
-

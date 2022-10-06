@@ -8,8 +8,12 @@
         height: auto;
 
         @include tablet {
-            width: 385px;
-            height: 370px;
+            width: 50%;
+            height: auto;
+        }
+
+        @include mobile {
+            display: none;
         }
     }
 
@@ -18,40 +22,86 @@
         font-size: 48px;
         font-weight: 900;
         line-height: 58px;
+
+        @include tablet {
+
+            font-size: 44px;
+            line-height: 53px;
+        }
+
+        @include mobile {
+
+            font-size: 38px;
+            line-height: 45px;
+        }
     }
-    
+
     &__title-wrapper {
         box-sizing: border-box;
-        margin: 0 0 0 91px;
+        width: 50%;
+        padding: 0 0 0 88px;
         display: flex;
         flex-grow: 1;
         background-color: $pink;
         align-items: center;
         position: relative;
 
+        @include tablet {
+            padding: 0 0 0 67px;
+            min-height: 367px;
+        }
+
+        @include mobile {
+            padding: 0 0 0 83px;
+            //padding: 363px;
+        }
+
+
         &::before {
             content: '';
             background-color: $dark-pink;
             height: 92px;
-        width: 12px;
-        position: absolute;
-        left: -28px;
+            width: 12px;
+            position: absolute;
+            left: 60px;
+
+            @include tablet {
+                left: 40px;
+            }
+        }
+
+
+
     }
 
-    
-
-}
-    
     &__subtitle {
         font-size: 37px;
         font-weight: 700;
         line-height: 44px;
         display: block;
-    }
-    
-    &__subtitle-pink {
-        color:$dark-pink;
-    }
-    
-}
 
+        @include tablet {
+            font-size: 24px;
+            line-height: 28.8px;
+        }
+
+        @include mobile {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    &__subtitle-pink {
+        color: $dark-pink;
+
+        @include tablet {
+            font-size: 24px;
+            line-height: 44.4px;
+        }
+
+        @include mobile {
+            font-size: 24px;
+        }
+    }
+
+}

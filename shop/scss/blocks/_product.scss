@@ -1,4 +1,9 @@
 .product {
+
+    @include tablet {
+        margin: 0 16px;
+    }
+
     &__title {
         text-transform: capitalize;
         display: flex;
@@ -22,8 +27,18 @@
 
     &__list {
         display: flex;
+
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @include tablet {
+            justify-content: space-around;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
     &__item {
@@ -31,14 +46,17 @@
         width: 360px;
 
         margin: 0 0 30px;
-        justify-content: flex-start;
+        justify-content: center;
+
         position: relative;
+
 
     }
 
     &__overlay-button {
         border: none;
         background-color: $light-grey;
+
     }
 
     &__item-wrapper {
@@ -109,8 +127,8 @@
 
 }
 
-.product__overlay-button:hover + .overlay,
-.product__overlay-button:focus + .overlay {
+.product__overlay-button:hover+.overlay,
+.product__overlay-button:focus+.overlay {
     display: block;
 }
 
@@ -121,7 +139,8 @@
     min-height: 420px;
     background: rgba(58, 56, 56, 0.86);
     position: absolute;
-    top: 0;
+    top: 1px;
+    left: 1px;
 
     &__button {
         position: relative;
@@ -131,15 +150,16 @@
         border: 1px solid $white;
         top: 188px;
         left: 111px;
-        background: transparent
+        background: transparent;
+
+        &::before {
+            content: url(/shop/img/basket.svg);
+            position: absolute;
+            top: 10px;
+            left: 13px;
+        }
     }
 
-    &__button::before {
-        content: url(/shop/img/basket.svg);
-        position: absolute;
-        top: 10px;
-        left: 13px;
-    }
 
     &__text {
         align-self: center;
