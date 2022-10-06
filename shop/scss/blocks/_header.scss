@@ -9,6 +9,31 @@
         justify-content: space-between;
         min-height: 75px;
 
+        @include tablet {
+        margin: auto 32px;
+        width: 91%;
+        }
+
+        @include mobile {
+            margin: auto 16px;
+        }
+
+    }
+
+    &__contorls {
+        width: 111px;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    &__controls-menu {
+        justify-content: space-between;
+        display: flex;
+        width: 169px;
+
+        @include mobile {
+            width: 32px;
+        }
     }
 
     &__dropdown {
@@ -20,17 +45,18 @@
     &__button {
         background-color: transparent;
         border: none;
-        margin: 0 33px 0 0;
+        //margin: 0 33px 0 0;
         position: relative;
     }
 
     &__nav {
-        //position: absolut;
+        position: absolut;
         display: none;
         background-color: $white;
         height: 764px;
         width: 232px;
         box-sizing: border-box;
+
     }
 
 
@@ -88,20 +114,27 @@
     &__button {
         background-color: transparent;
         border: none;
-        margin: 0 33px 0 0;
+        //margin: 0 33px 0 0;
 
     }
 
-    &__person-link {
-        margin: 0 33px 0 0;
-    }
+   // &__person-link {
+     //   margin: 0 33px 0 0;
+    //}
 
-    &__logo {
-        margin: 0 34px 0 0;
-    }
+    //&__logo {
+    //    margin: 0 34px 0 0;
+    //}
 
     &__loup {
         fill: $light-grey;
+        align-self: center;
+    }
+
+    &__person-link, &__cart-link {
+        @include mobile {
+            display: none;
+        }
     }
 }
 
