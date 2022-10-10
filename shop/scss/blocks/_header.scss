@@ -37,7 +37,7 @@
     }
 
     &__dropdown {
-        position: relative;
+        // position: relative;
         display: inline-block;
     }
 
@@ -45,12 +45,11 @@
     &__button {
         background-color: transparent;
         border: none;
-        //margin: 0 33px 0 0;
         position: relative;
     }
 
     &__nav {
-        position: absolut;
+        position: absolute;
         display: none;
         background-color: $white;
         height: 764px;

@@ -1,12 +1,37 @@
+.title-registration{
+    display: flex;
+    justify-content: flex-start;
+    width: 71%;
+    
+    @include tablet {
+        width: 100%;
+        margin: 59px 16px;
+    }
+}
+
 
 .registration {
     display: flex;
     flex-direction: column;
     margin: 0 128px 0 0;
 
+    @include tablet {
+        margin: 0 22px 0 0;
+    }
+
    &__wrapper {
         display: flex;
         margin: 64px 230px 96px ;
+
+        @include tablet {
+            margin: 40px 16px 96px;
+            width: 100%;
+        }
+
+        @include  minitablet {
+            align-self: center;
+            flex-wrap: wrap;
+        }
     }
     
     &__title {
@@ -116,7 +141,7 @@
 } 
 
 .registration-information {
-&__title {
+    &__title {
         text-transform: uppercase;
     font-size: 24px;
     font-weight: 300;
@@ -128,6 +153,10 @@
     font-weight: 300;
     line-height: 29px;
     margin: 22px 0 21px;
+    }
+
+    @include tablet {
+        margin: 0 16px;
     }
 
     }
